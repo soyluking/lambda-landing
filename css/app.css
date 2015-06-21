@@ -5091,7 +5091,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #2C2D3A;
   font-family: "Muli", Helvetica, Arial, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
   line-height: 1.4;
   margin-bottom: 0.5rem;
   margin-top: 0.2rem;
@@ -6083,4 +6083,63 @@ th.hide-for-touch {
   .show-for-print {
     display: none !important;
   }
+}
+/* line 1, ../scss/_custom.scss */
+.title {
+  font-size: 3.625rem;
+  text-align: center;
+}
+/* line 5, ../scss/_custom.scss */
+.title.primary {
+  color: #BEEAA0;
+}
+
+/* line 10, ../scss/_custom.scss */
+.description {
+  color: #87909E;
+  font-size: 1.375rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+/* line 17, ../scss/_custom.scss */
+.subtitle {
+  color: #40464F;
+}
+
+/* line 21, ../scss/_custom.scss */
+.btn-white {
+  background-color: #FFFFFF;
+  border: 1px solid #87909E;
+  color: #87909E;
+}
+/* line 26, ../scss/_custom.scss */
+.btn-white:hover {
+  background-color: #87909E;
+  color: #FFFFFF;
+}
+
+/* line 34, ../scss/_custom.scss */
+.content_welcome .subtitle {
+  font-size: 1.75rem;
+  margin-bottom: 2.25rem;
+}
+
+/* line 40, ../scss/_custom.scss */
+.questions_welcome {
+  margin-top: 7.1875rem;
+  text-align: right;
+}
+/* line 44, ../scss/_custom.scss */
+.questions_welcome p {
+  padding-left: 5rem;
+}
+
+/* line 49, ../scss/_custom.scss */
+.trivia_welcome {
+  margin-top: 7.1875rem;
+}
+/* line 52, ../scss/_custom.scss */
+.trivia_welcome p {
+  padding-right: 5rem;
 }
