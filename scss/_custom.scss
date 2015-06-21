@@ -1,0 +1,55 @@
+.title {
+	font-size: $h1-font-size;
+	text-align: center;
+
+	&.primary {
+		color: $lime-color;
+	}
+}
+
+.description {
+	color: $grey-color;
+	font-size: rem-calc(22);
+	margin-top: rem-calc(24);
+	text-align: center;
+}
+
+.subtitle {
+	color: $slate-color;
+}
+
+.btn-white {
+	background-color: $white;
+	border: 1px solid $grey-color;
+	color: $grey-color;
+
+	&:hover {
+		background-color: $grey-color;
+		color: $white;
+	}
+}
+
+// Welcome developers section
+.content_welcome {
+	.subtitle {
+		font-size: $h3-font-size;
+		margin-bottom: rem-calc(36);
+	}
+}
+
+.questions_welcome {
+	margin-top: rem-calc(115);
+	text-align: right;
+
+	p {
+		padding-left: rem-calc(80);
+	}
+}
+
+.trivia_welcome {
+	margin-top: rem-calc(115);
+
+	p {
+		padding-right: rem-calc(80);
+	}
+}
