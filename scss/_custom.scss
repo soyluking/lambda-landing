@@ -1,10 +1,5 @@
 .title {
-	font-size: $h1-font-size;
 	text-align: center;
-
-	&.primary {
-		color: $lime-color;
-	}
 }
 
 .description {
@@ -18,6 +13,14 @@
 	color: $slate-color;
 }
 
+.primary {
+	color: $lime-dark-color;
+}
+
+.text-right {
+	text-align: right;
+}
+
 .btn-white {
 	background-color: $white;
 	border: 1px solid $grey-color;
@@ -29,7 +32,30 @@
 	}
 }
 
+.gradient-border {
+	background-color: $jungle-dark-color;
+	background: #24394d;
+	background: #24394d;
+	background: -moz-linear-gradient(left,  #24394d 0%, #60b3b1 35%, #a4d683 50%, #60b3b1 75%, #24394d 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#24394d), color-stop(35%,#60b3b1), color-stop(50%,#a4d683), color-stop(75%,#60b3b1), color-stop(100%,#24394d));
+	background: -webkit-linear-gradient(left,  #24394d 0%,#60b3b1 35%,#a4d683 50%,#60b3b1 75%,#24394d 100%);
+	background: -o-linear-gradient(left,  #24394d 0%,#60b3b1 35%,#a4d683 50%,#60b3b1 75%,#24394d 100%);
+	background: -ms-linear-gradient(left,  #24394d 0%,#60b3b1 35%,#a4d683 50%,#60b3b1 75%,#24394d 100%);
+	background: linear-gradient(to right,  #24394d 0%,#60b3b1 35%,#a4d683 50%,#60b3b1 75%,#24394d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24394d', endColorstr='#24394d',GradientType=1 );
+	height: rem-calc(20);
+}
+
 // Welcome developers section
+.welcome {
+	position: relative;
+	z-index: 9;
+
+	.title {
+		font-size: $h1-font-size;
+	}
+}
+
 .content_welcome {
 	.subtitle {
 		font-size: $h3-font-size;
@@ -51,5 +77,62 @@
 
 	p {
 		padding-right: rem-calc(80);
+	}
+}
+
+// Motivational rewards section
+.rewards {
+	background-color: #F6F6F6;
+	margin-top: -(rem-calc(150));
+	padding-top: rem-calc(150);
+
+	.title {
+		color: $grey-dark-color;
+		margin-top: rem-calc(50);
+	}
+
+	.gradient-border {
+		margin-top: rem-calc(50);
+	}
+}
+
+.header_rewards {
+	text-align: center;
+
+	p {
+		font-size: $h5-font-size;
+	}
+
+	.primary {
+		margin-bottom: rem-calc(30);
+	}
+}
+
+.item_reward {
+	display: table;
+
+	figure {
+		display: table-cell;
+		margin: 0;
+		vertical-align: middle;
+		width: 188px;
+
+		img {
+			display: block;
+			height: auto;
+			width: 100%;
+		}
+	}
+
+	p {
+		color: $grey-color;
+		font-size: rem-calc(22);
+		font-weight: 300;
+		display: table-cell;
+		vertical-align: middle;
+
+		span {
+			display: block;
+		}
 	}
 }
