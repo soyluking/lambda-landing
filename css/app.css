@@ -6139,6 +6139,20 @@ th.hide-for-touch {
 }
 
 /* line 40, ../scss/_custom.scss */
+a.button {
+  background-color: #A4D683;
+  border-top: 3px solid #BEEAA0;
+}
+/* line 44, ../scss/_custom.scss */
+a.button:hover {
+  background-color: #91cd69;
+}
+/* line 48, ../scss/_custom.scss */
+a.button:active {
+  border-top: #A4D683;
+}
+
+/* line 53, ../scss/_custom.scss */
 .gradient-border {
   background-color: #60B3B1;
   background: #24394d;
@@ -6153,7 +6167,7 @@ th.hide-for-touch {
   height: 1.25rem;
 }
 
-/* line 54, ../scss/_custom.scss */
+/* line 67, ../scss/_custom.scss */
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -6165,132 +6179,165 @@ th.hide-for-touch {
   width: 1px;
 }
 
-/* line 65, ../scss/_custom.scss */
+/* line 78, ../scss/_custom.scss */
 .header_section {
   text-align: center;
 }
 
-/* line 70, ../scss/_custom.scss */
+/**
+ * Header styles
+ */
+/* line 85, ../scss/_custom.scss */
+.header {
+  padding: 1.875rem 0;
+  position: absolute;
+  width: 100%;
+}
+/* line 90, ../scss/_custom.scss */
+.header .button {
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+/* line 96, ../scss/_custom.scss */
+.logo {
+  margin: .25rem 0;
+}
+
+/**
+ * Hero section styles
+ */
+/* line 103, ../scss/_custom.scss */
+.hero {
+  background-color: #60B3B1;
+  padding-top: 7.5rem;
+}
+
+/**
+ * Welcome developers section styles
+ */
+/* line 111, ../scss/_custom.scss */
 .welcome {
   padding: 3.75rem 0;
   position: relative;
   z-index: 9;
 }
-/* line 75, ../scss/_custom.scss */
+/* line 116, ../scss/_custom.scss */
 .welcome .title {
   font-size: 1.75rem;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 75, ../scss/_custom.scss */
+  /* line 116, ../scss/_custom.scss */
   .welcome .title {
     font-size: 3.625rem;
   }
 }
-/* line 83, ../scss/_custom.scss */
+/* line 124, ../scss/_custom.scss */
 .welcome .description {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 83, ../scss/_custom.scss */
+  /* line 124, ../scss/_custom.scss */
   .welcome .description {
     font-size: 1.375rem;
   }
 }
 
-/* line 93, ../scss/_custom.scss */
+/* line 134, ../scss/_custom.scss */
 .content_welcome .subtitle {
   font-size: 1.75rem;
   margin-bottom: 2.25rem;
 }
 
-/* line 99, ../scss/_custom.scss */
+/* line 140, ../scss/_custom.scss */
 .questions_welcome {
   margin-top: 1.5625rem;
   text-align: center;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 99, ../scss/_custom.scss */
+  /* line 140, ../scss/_custom.scss */
   .questions_welcome {
     margin-top: 7.1875rem;
     text-align: right;
   }
-  /* line 107, ../scss/_custom.scss */
+  /* line 148, ../scss/_custom.scss */
   .questions_welcome p {
     padding-left: 5rem;
   }
 }
 
-/* line 113, ../scss/_custom.scss */
+/* line 154, ../scss/_custom.scss */
 .trivia_welcome {
   margin-top: 1.5625rem;
   text-align: center;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 113, ../scss/_custom.scss */
+  /* line 154, ../scss/_custom.scss */
   .trivia_welcome {
     margin-top: 7.1875rem;
     text-align: left;
   }
-  /* line 121, ../scss/_custom.scss */
+  /* line 162, ../scss/_custom.scss */
   .trivia_welcome p {
     padding-right: 5rem;
   }
 }
 
-/* line 127, ../scss/_custom.scss */
+/* line 168, ../scss/_custom.scss */
 .screen_welcome figure {
   margin: 0;
   text-align: center;
 }
 
-/* line 133, ../scss/_custom.scss */
+/* line 174, ../scss/_custom.scss */
 .rewards {
   background-color: #F6F6F6;
+  padding-top: 3.75rem;
 }
-/* line 136, ../scss/_custom.scss */
+/* line 178, ../scss/_custom.scss */
 .rewards .title {
   color: #707885;
   margin-top: 3.125rem;
 }
-/* line 141, ../scss/_custom.scss */
+/* line 183, ../scss/_custom.scss */
 .rewards .gradient-border {
   margin-top: 3.125rem;
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 133, ../scss/_custom.scss */
+  /* line 174, ../scss/_custom.scss */
   .rewards {
     margin-top: -15.625rem;
     padding-top: 15.625rem;
   }
 }
 
-/* line 152, ../scss/_custom.scss */
+/* line 194, ../scss/_custom.scss */
 .header_rewards p {
   font-size: 1.125rem;
 }
-/* line 156, ../scss/_custom.scss */
+/* line 198, ../scss/_custom.scss */
 .header_rewards .primary {
   margin-bottom: 1.875rem;
 }
 
-/* line 161, ../scss/_custom.scss */
+/* line 203, ../scss/_custom.scss */
 .item_reward {
   display: table;
 }
-/* line 164, ../scss/_custom.scss */
+/* line 206, ../scss/_custom.scss */
 .item_reward figure {
   display: table-cell;
   margin: 0;
   vertical-align: middle;
   width: 188px;
 }
-/* line 170, ../scss/_custom.scss */
+/* line 212, ../scss/_custom.scss */
 .item_reward figure img {
   display: block;
   height: auto;
   width: 100%;
 }
-/* line 177, ../scss/_custom.scss */
+/* line 219, ../scss/_custom.scss */
 .item_reward p {
   color: #87909E;
   font-size: 1.375rem;
@@ -6298,48 +6345,48 @@ th.hide-for-touch {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 184, ../scss/_custom.scss */
+/* line 226, ../scss/_custom.scss */
 .item_reward p span {
   display: block;
 }
 
-/* line 191, ../scss/_custom.scss */
+/* line 233, ../scss/_custom.scss */
 .languages {
   padding: 3.75rem 0;
   text-align: center;
 }
-/* line 195, ../scss/_custom.scss */
+/* line 237, ../scss/_custom.scss */
 .languages .primary {
   font-weight: 300;
   margin-bottom: 0.3125rem;
   text-transform: uppercase;
 }
 
-/* line 203, ../scss/_custom.scss */
+/* line 245, ../scss/_custom.scss */
 .content_languages ul {
   margin-top: 1.875rem;
 }
-/* line 207, ../scss/_custom.scss */
+/* line 249, ../scss/_custom.scss */
 .content_languages figure {
   margin: 0;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 207, ../scss/_custom.scss */
+  /* line 249, ../scss/_custom.scss */
   .content_languages figure {
     padding: 2.5rem;
   }
 }
 
-/* line 217, ../scss/_custom.scss */
+/* line 259, ../scss/_custom.scss */
 .footer_languages .contact {
   color: #87909E;
   font-weight: 300;
 }
-/* line 222, ../scss/_custom.scss */
+/* line 264, ../scss/_custom.scss */
 .footer_languages .contact a {
   color: #87909E;
 }
-/* line 225, ../scss/_custom.scss */
+/* line 267, ../scss/_custom.scss */
 .footer_languages .contact a:hover {
   color: #707885;
   text-decoration: underline;
@@ -6348,7 +6395,7 @@ th.hide-for-touch {
 /**
  * Waiting list section
  */
-/* line 235, ../scss/_custom.scss */
+/* line 277, ../scss/_custom.scss */
 .subscribe {
   background-color: #334C5A;
   padding: 3.75rem 0;
@@ -6361,57 +6408,46 @@ th.hide-for-touch {
   background-color: #3D7382;
 }
 
-/* line 242, ../scss/_custom.scss */
+/* line 284, ../scss/_custom.scss */
 .header_subscribe .title {
   color: #FFFFFF;
   font-size: 2.5rem;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 242, ../scss/_custom.scss */
+  /* line 284, ../scss/_custom.scss */
   .header_subscribe .title {
     font-size: 4rem;
   }
 }
 
-/* line 252, ../scss/_custom.scss */
+/* line 294, ../scss/_custom.scss */
 .content_subscribe {
   text-align: center;
 }
-/* line 255, ../scss/_custom.scss */
+/* line 297, ../scss/_custom.scss */
 .content_subscribe p {
   font-size: 1.1875rem;
   color: #87909E;
 }
-/* line 260, ../scss/_custom.scss */
+/* line 302, ../scss/_custom.scss */
 .content_subscribe input {
   font-size: 1.125rem;
   font-weight: 300;
   height: 4.6875rem;
   text-align: center;
 }
-/* line 267, ../scss/_custom.scss */
+/* line 309, ../scss/_custom.scss */
 .content_subscribe a.button {
-  background-color: #A4D683;
-  border-top: 3px solid #BEEAA0;
-  color: #40464F;
   display: block;
+  color: #40464F;
   font-size: 1.25rem;
-  height: 4.6875rem;
   line-height: 1.9;
-}
-/* line 276, ../scss/_custom.scss */
-.content_subscribe a.button:hover {
-  background-color: #91cd69;
-}
-/* line 280, ../scss/_custom.scss */
-.content_subscribe a.button:active {
-  border-top: #A4D683;
 }
 
 /**
  * Footer styles
  */
-/* line 289, ../scss/_custom.scss */
+/* line 320, ../scss/_custom.scss */
 .footer {
   background-color: #40464F;
   padding: 3.75rem 0;
@@ -6424,23 +6460,23 @@ th.hide-for-touch {
   background-color: #40464F;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 289, ../scss/_custom.scss */
+  /* line 320, ../scss/_custom.scss */
   .footer {
     padding: 7.5rem;
   }
 }
 
-/* line 299, ../scss/_custom.scss */
+/* line 330, ../scss/_custom.scss */
 .social_footer {
   margin: 0;
   text-align: center;
 }
-/* line 303, ../scss/_custom.scss */
+/* line 334, ../scss/_custom.scss */
 .social_footer > li {
   display: inline-block;
   margin: 0 0.625rem;
 }
-/* line 308, ../scss/_custom.scss */
+/* line 339, ../scss/_custom.scss */
 .social_footer .fa {
   background-color: #FFFFFF;
   border-radius: 1000px;
@@ -6455,28 +6491,28 @@ th.hide-for-touch {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 320, ../scss/_custom.scss */
+/* line 351, ../scss/_custom.scss */
 .social_footer a:hover .fa {
   background-color: #87909E;
   color: #FFFFFF;
 }
-/* line 327, ../scss/_custom.scss */
+/* line 358, ../scss/_custom.scss */
 .social_footer a:active .fa {
   background-color: #707885;
   color: #FFFFFF;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 299, ../scss/_custom.scss */
+  /* line 330, ../scss/_custom.scss */
   .social_footer {
     text-align: left;
   }
-  /* line 336, ../scss/_custom.scss */
+  /* line 367, ../scss/_custom.scss */
   .social_footer > li:first-child {
     margin-left: 0;
   }
 }
 
-/* line 342, ../scss/_custom.scss */
+/* line 373, ../scss/_custom.scss */
 .credit_footer {
   color: #FFFFFF;
   font-size: 0.8125rem;
@@ -6485,7 +6521,7 @@ th.hide-for-touch {
   text-align: center;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 342, ../scss/_custom.scss */
+  /* line 373, ../scss/_custom.scss */
   .credit_footer {
     padding-bottom: 1.25rem;
     text-align: right;

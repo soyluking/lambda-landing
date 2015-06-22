@@ -37,6 +37,19 @@
 	}
 }
 
+a.button {
+	background-color: $lime-dark-color;
+	border-top: 3px solid $lime-color;
+
+	&:hover {
+		background-color: scale-color($lime-dark-color, $lightness: -10%);
+	}
+
+	&:active {
+		border-top: $lime-dark-color;
+	}
+}
+
 .gradient-border {
 	background-color: $jungle-dark-color;
 	background: #24394d;
@@ -66,7 +79,35 @@
 	text-align: center;
 }
 
-// Welcome developers section
+/**
+ * Header styles
+ */
+.header {
+	padding: rem-calc(30) 0;
+	position: absolute;
+	width: 100%;
+
+	.button {
+		color: $white;
+		text-transform: uppercase;
+	}
+}
+
+.logo {
+	margin: .25rem 0;
+}
+
+/**
+ * Hero section styles
+ */
+.hero {
+	background-color: $jungle-dark-color;
+	padding-top: rem-calc(120);
+}
+
+/**
+ * Welcome developers section styles
+ */
 .welcome {
 	padding: $column-gutter*2 0;
 	position: relative;
@@ -132,6 +173,7 @@
 // Motivational rewards section
 .rewards {
 	background-color: #F6F6F6;
+	padding-top: $column-gutter*2;
 
 	.title {
 		color: $grey-dark-color;
@@ -265,21 +307,10 @@
 	}
 
 	a.button {
-		background-color: $lime-dark-color;
-		border-top: 3px solid $lime-color;
-		color: $slate-color;
 		display: block;
+		color: $slate-color;
 		font-size: rem-calc(20);
-		height: rem-calc(75);
 		line-height: 1.9;
-
-		&:hover {
-			background-color: scale-color($lime-dark-color, $lightness: -10%);
-		}
-
-		&:active {
-			border-top: $lime-dark-color;
-		}
 	}
 }
 
