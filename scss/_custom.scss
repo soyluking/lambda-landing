@@ -126,6 +126,7 @@
 
 .screen_welcome figure {
 	margin: 0;
+	text-align: center;
 }
 
 // Motivational rewards section
@@ -141,9 +142,9 @@
 		margin-top: rem-calc(50);
 	}
 
-	@media #{$medium-up} {
-		margin-top: -(rem-calc(150));
-		padding-top: rem-calc(150);
+	@media #{$large-up} {
+		margin-top: -(rem-calc(250));
+		padding-top: rem-calc(250);
 	}
 }
 
@@ -282,6 +283,71 @@
 	}
 }
 
+/**
+ * Footer styles
+ */
 .footer {
-	background-color: #26292f;
+	background-color: $slate-color;
+	padding: $column-gutter*2 0;
+	@include radial-gradient($slate-color, $slate-dark-color);
+
+	@media #{$medium-up} {
+		padding: $column-gutter*4;
+	}
+}
+
+.social_footer {
+	margin: 0;
+	text-align: center;
+
+	> li {
+		display: inline-block;
+		margin: 0 rem-calc(10);
+	}
+
+	.fa {
+		background-color: $white;
+		border-radius: 1000px;
+		color: $slate-dark-color;
+		height: rem-calc(60);
+		line-height: rem-calc(60);
+		text-align: center;
+		width: rem-calc(60);
+		@include transition(all, 0.4s, ease-in-out);
+	}
+
+	a:hover {
+		.fa {
+			background-color: $grey-color;
+			color: $white;
+		}
+	}
+
+	a:active {
+		.fa {
+			background-color: $grey-dark-color;
+			color: $white;
+		}
+	}
+
+	@media #{$medium-up} {
+		text-align: left;
+
+		> li:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+.credit_footer {
+	color: $white;
+	font-size: rem-calc(13);
+	padding-top: rem-calc(20);
+	margin: 0;
+	text-align: center;
+
+	@media #{$medium-up} {
+		padding-bottom: rem-calc(20);
+		text-align: right;
+	}	
 }
