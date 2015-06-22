@@ -436,6 +436,10 @@ th {
 /**
  * Color variables for Lambda
  */
+/**
+ * Radial Gradient Background
+ * http://codepen.io/codybonney/pen/qsGkA/
+ */
 /* line 364, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-version {
   font-family: "/5.5.2/";
@@ -6085,46 +6089,52 @@ th.hide-for-touch {
   }
 }
 /* line 1, ../scss/_custom.scss */
-.title {
-  text-align: center;
+::-moz-selection {
+  color: #FFFFFF;
+  background: #A4D683;
 }
 
-/* line 5, ../scss/_custom.scss */
+/* line 6, ../scss/_custom.scss */
+::selection {
+  color: #FFFFFF;
+  background: #BEEAA0;
+}
+
+/* line 11, ../scss/_custom.scss */
 .description {
   color: #87909E;
-  font-size: 1.375rem;
   margin-top: 1.5rem;
   text-align: center;
 }
 
-/* line 12, ../scss/_custom.scss */
+/* line 17, ../scss/_custom.scss */
 .subtitle {
   color: #40464F;
 }
 
-/* line 16, ../scss/_custom.scss */
+/* line 21, ../scss/_custom.scss */
 .primary {
   color: #A4D683;
 }
 
-/* line 20, ../scss/_custom.scss */
+/* line 25, ../scss/_custom.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 24, ../scss/_custom.scss */
+/* line 29, ../scss/_custom.scss */
 .btn-white {
   background-color: #FFFFFF;
   border: 1px solid #87909E;
   color: #87909E;
 }
-/* line 29, ../scss/_custom.scss */
+/* line 34, ../scss/_custom.scss */
 .btn-white:hover {
   background-color: #87909E;
   color: #FFFFFF;
 }
 
-/* line 35, ../scss/_custom.scss */
+/* line 40, ../scss/_custom.scss */
 .gradient-border {
   background-color: #60B3B1;
   background: #24394d;
@@ -6139,7 +6149,7 @@ th.hide-for-touch {
   height: 1.25rem;
 }
 
-/* line 49, ../scss/_custom.scss */
+/* line 54, ../scss/_custom.scss */
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -6151,88 +6161,131 @@ th.hide-for-touch {
   width: 1px;
 }
 
-/* line 61, ../scss/_custom.scss */
+/* line 65, ../scss/_custom.scss */
+.header_section {
+  text-align: center;
+}
+
+/* line 70, ../scss/_custom.scss */
 .welcome {
+  padding: 3.75rem 0;
   position: relative;
   z-index: 9;
 }
-/* line 65, ../scss/_custom.scss */
+/* line 75, ../scss/_custom.scss */
 .welcome .title {
-  font-size: 3.625rem;
+  font-size: 1.75rem;
+}
+@media only screen and (min-width: 40.0625em) {
+  /* line 75, ../scss/_custom.scss */
+  .welcome .title {
+    font-size: 3.625rem;
+  }
+}
+/* line 83, ../scss/_custom.scss */
+.welcome .description {
+  font-size: 1.125rem;
+}
+@media only screen and (min-width: 40.0625em) {
+  /* line 83, ../scss/_custom.scss */
+  .welcome .description {
+    font-size: 1.375rem;
+  }
 }
 
-/* line 71, ../scss/_custom.scss */
+/* line 93, ../scss/_custom.scss */
 .content_welcome .subtitle {
   font-size: 1.75rem;
   margin-bottom: 2.25rem;
 }
 
-/* line 77, ../scss/_custom.scss */
+/* line 99, ../scss/_custom.scss */
 .questions_welcome {
-  margin-top: 7.1875rem;
-  text-align: right;
+  margin-top: 1.5625rem;
+  text-align: center;
 }
-/* line 81, ../scss/_custom.scss */
-.questions_welcome p {
-  padding-left: 5rem;
+@media only screen and (min-width: 40.0625em) {
+  /* line 99, ../scss/_custom.scss */
+  .questions_welcome {
+    margin-top: 7.1875rem;
+    text-align: right;
+  }
+  /* line 107, ../scss/_custom.scss */
+  .questions_welcome p {
+    padding-left: 5rem;
+  }
 }
 
-/* line 86, ../scss/_custom.scss */
+/* line 113, ../scss/_custom.scss */
 .trivia_welcome {
-  margin-top: 7.1875rem;
+  margin-top: 1.5625rem;
+  text-align: center;
 }
-/* line 89, ../scss/_custom.scss */
-.trivia_welcome p {
-  padding-right: 5rem;
+@media only screen and (min-width: 40.0625em) {
+  /* line 113, ../scss/_custom.scss */
+  .trivia_welcome {
+    margin-top: 7.1875rem;
+    text-align: left;
+  }
+  /* line 121, ../scss/_custom.scss */
+  .trivia_welcome p {
+    padding-right: 5rem;
+  }
 }
 
-/* line 95, ../scss/_custom.scss */
+/* line 127, ../scss/_custom.scss */
+.screen_welcome figure {
+  margin: 0;
+}
+
+/* line 132, ../scss/_custom.scss */
 .rewards {
   background-color: #F6F6F6;
-  margin-top: -9.375rem;
-  padding-top: 9.375rem;
 }
-/* line 100, ../scss/_custom.scss */
+/* line 135, ../scss/_custom.scss */
 .rewards .title {
   color: #707885;
   margin-top: 3.125rem;
 }
-/* line 105, ../scss/_custom.scss */
+/* line 140, ../scss/_custom.scss */
 .rewards .gradient-border {
   margin-top: 3.125rem;
 }
-
-/* line 110, ../scss/_custom.scss */
-.header_rewards {
-  text-align: center;
+@media only screen and (min-width: 40.0625em) {
+  /* line 132, ../scss/_custom.scss */
+  .rewards {
+    margin-top: -9.375rem;
+    padding-top: 9.375rem;
+  }
 }
-/* line 113, ../scss/_custom.scss */
+
+/* line 151, ../scss/_custom.scss */
 .header_rewards p {
   font-size: 1.125rem;
 }
-/* line 117, ../scss/_custom.scss */
+/* line 155, ../scss/_custom.scss */
 .header_rewards .primary {
   margin-bottom: 1.875rem;
 }
 
-/* line 122, ../scss/_custom.scss */
+/* line 160, ../scss/_custom.scss */
 .item_reward {
   display: table;
 }
-/* line 125, ../scss/_custom.scss */
+/* line 163, ../scss/_custom.scss */
 .item_reward figure {
   display: table-cell;
   margin: 0;
   vertical-align: middle;
   width: 188px;
 }
-/* line 131, ../scss/_custom.scss */
+/* line 169, ../scss/_custom.scss */
 .item_reward figure img {
   display: block;
   height: auto;
   width: 100%;
 }
-/* line 138, ../scss/_custom.scss */
+/* line 176, ../scss/_custom.scss */
 .item_reward p {
   color: #87909E;
   font-size: 1.375rem;
@@ -6240,49 +6293,117 @@ th.hide-for-touch {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 145, ../scss/_custom.scss */
+/* line 183, ../scss/_custom.scss */
 .item_reward p span {
   display: block;
 }
 
-/* line 152, ../scss/_custom.scss */
+/* line 190, ../scss/_custom.scss */
 .languages {
   padding: 3.75rem 0;
   text-align: center;
 }
-/* line 156, ../scss/_custom.scss */
+/* line 194, ../scss/_custom.scss */
 .languages .primary {
   font-weight: 300;
   margin-bottom: 0.3125rem;
   text-transform: uppercase;
 }
 
-/* line 164, ../scss/_custom.scss */
+/* line 202, ../scss/_custom.scss */
 .content_languages ul {
   margin-top: 1.875rem;
 }
-/* line 168, ../scss/_custom.scss */
+/* line 206, ../scss/_custom.scss */
 .content_languages figure {
   margin: 0;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 168, ../scss/_custom.scss */
+  /* line 206, ../scss/_custom.scss */
   .content_languages figure {
     padding: 2.5rem;
   }
 }
 
-/* line 178, ../scss/_custom.scss */
+/* line 216, ../scss/_custom.scss */
 .footer_languages .contact {
   color: #87909E;
   font-weight: 300;
 }
-/* line 183, ../scss/_custom.scss */
+/* line 221, ../scss/_custom.scss */
 .footer_languages .contact a {
   color: #87909E;
 }
-/* line 186, ../scss/_custom.scss */
+/* line 224, ../scss/_custom.scss */
 .footer_languages .contact a:hover {
   color: #707885;
   text-decoration: underline;
+}
+
+/**
+ * Waiting list section
+ */
+/* line 234, ../scss/_custom.scss */
+.subscribe {
+  background-color: #334C5A;
+  padding: 3.75rem 0;
+  background: -moz-radial-gradient(center, circle cover, #3D7382 0%, #273247 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #3D7382), color-stop(100%, #273247));
+  background: -webkit-radial-gradient(center, circle cover, #3D7382 0%, #273247 100%);
+  background: -o-radial-gradient(center, circle cover, #3D7382 0%, #273247 100%);
+  background: -ms-radial-gradient(center, circle cover, #3D7382 0%, #273247 100%);
+  background: radial-gradient(circle cover at center, #3d7382 0%, #273247 100%);
+  background-color: #3D7382;
+}
+
+/* line 241, ../scss/_custom.scss */
+.header_subscribe .title {
+  color: #FFFFFF;
+  font-size: 2.5rem;
+}
+@media only screen and (min-width: 40.0625em) {
+  /* line 241, ../scss/_custom.scss */
+  .header_subscribe .title {
+    font-size: 4rem;
+  }
+}
+
+/* line 251, ../scss/_custom.scss */
+.content_subscribe {
+  text-align: center;
+}
+/* line 254, ../scss/_custom.scss */
+.content_subscribe p {
+  font-size: 1.1875rem;
+  color: #87909E;
+}
+/* line 259, ../scss/_custom.scss */
+.content_subscribe input {
+  font-size: 1.125rem;
+  font-weight: 300;
+  height: 4.6875rem;
+  text-align: center;
+}
+/* line 266, ../scss/_custom.scss */
+.content_subscribe a.button {
+  background-color: #A4D683;
+  border-top: 3px solid #BEEAA0;
+  color: #40464F;
+  display: block;
+  font-size: 1.25rem;
+  height: 4.6875rem;
+  line-height: 1.9;
+}
+/* line 275, ../scss/_custom.scss */
+.content_subscribe a.button:hover {
+  background-color: #91cd69;
+}
+/* line 279, ../scss/_custom.scss */
+.content_subscribe a.button:active {
+  border-top: #A4D683;
+}
+
+/* line 285, ../scss/_custom.scss */
+.footer {
+  background-color: #26292f;
 }

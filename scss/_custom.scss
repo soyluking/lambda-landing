@@ -1,10 +1,15 @@
-.title {
-	text-align: center;
+::-moz-selection {
+	color: $white;
+	background: $lime-dark-color;
+}
+
+::selection {
+	color: $white;
+	background: $lime-color;
 }
 
 .description {
 	color: $grey-color;
-	font-size: rem-calc(22);
 	margin-top: rem-calc(24);
 	text-align: center;
 }
@@ -57,13 +62,30 @@
 	width: 1px;
 }
 
+.header_section {
+	text-align: center;
+}
+
 // Welcome developers section
 .welcome {
+	padding: $column-gutter*2 0;
 	position: relative;
 	z-index: 9;
 
 	.title {
-		font-size: $h1-font-size;
+		font-size: $h3-font-size;
+
+		@media #{$medium-up} {
+			font-size: $h1-font-size;
+		}
+	}
+
+	.description {
+		font-size: rem-calc(18);
+
+		@media #{$medium-up} {
+			font-size: rem-calc(22);
+		}
 	}
 }
 
@@ -75,27 +97,40 @@
 }
 
 .questions_welcome {
-	margin-top: rem-calc(115);
-	text-align: right;
+	margin-top: rem-calc(25);
+	text-align: center;
 
-	p {
-		padding-left: rem-calc(80);
+	@media #{$medium-up} {
+		margin-top: rem-calc(115);
+		text-align: right;
+
+		p {
+			padding-left: rem-calc(80);
+		}
 	}
 }
 
 .trivia_welcome {
-	margin-top: rem-calc(115);
+	margin-top: rem-calc(25);
+	text-align: center;
 
-	p {
-		padding-right: rem-calc(80);
+	@media #{$medium-up} {
+		margin-top: rem-calc(115);
+		text-align: left;
+
+		p {
+			padding-right: rem-calc(80);
+		}
 	}
+}
+
+.screen_welcome figure {
+	margin: 0;
 }
 
 // Motivational rewards section
 .rewards {
 	background-color: #F6F6F6;
-	margin-top: -(rem-calc(150));
-	padding-top: rem-calc(150);
 
 	.title {
 		color: $grey-dark-color;
@@ -105,11 +140,14 @@
 	.gradient-border {
 		margin-top: rem-calc(50);
 	}
+
+	@media #{$medium-up} {
+		margin-top: -(rem-calc(150));
+		padding-top: rem-calc(150);
+	}
 }
 
 .header_rewards {
-	text-align: center;
-
 	p {
 		font-size: $h5-font-size;
 	}
@@ -188,4 +226,62 @@
 			text-decoration: underline;
 		}
 	}
+}
+
+/**
+ * Waiting list section
+ */
+.subscribe {
+	background-color: #334C5A;
+	padding: $column-gutter*2 0;
+	@include radial-gradient(#3D7382, #273247);
+}
+
+.header_subscribe {
+	.title {
+		color: $white;
+		font-size: $h2-font-size;
+
+		@media #{$medium-up} {
+			font-size: rem-calc(64);
+		}
+	}
+}
+
+.content_subscribe {
+	text-align: center;
+
+	p {
+		font-size: rem-calc(19);
+		color: $grey-color;
+	}
+
+	input {
+		font-size: rem-calc(18);
+		font-weight: 300;
+		height: rem-calc(75);
+		text-align: center;
+	}
+
+	a.button {
+		background-color: $lime-dark-color;
+		border-top: 3px solid $lime-color;
+		color: $slate-color;
+		display: block;
+		font-size: rem-calc(20);
+		height: rem-calc(75);
+		line-height: 1.9;
+
+		&:hover {
+			background-color: scale-color($lime-dark-color, $lightness: -10%);
+		}
+
+		&:active {
+			border-top: $lime-dark-color;
+		}
+	}
+}
+
+.footer {
+	background-color: #26292f;
 }
