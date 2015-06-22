@@ -6139,88 +6139,100 @@ th.hide-for-touch {
   height: 1.25rem;
 }
 
-/* line 50, ../scss/_custom.scss */
+/* line 49, ../scss/_custom.scss */
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 61, ../scss/_custom.scss */
 .welcome {
   position: relative;
   z-index: 9;
 }
-/* line 54, ../scss/_custom.scss */
+/* line 65, ../scss/_custom.scss */
 .welcome .title {
   font-size: 3.625rem;
 }
 
-/* line 60, ../scss/_custom.scss */
+/* line 71, ../scss/_custom.scss */
 .content_welcome .subtitle {
   font-size: 1.75rem;
   margin-bottom: 2.25rem;
 }
 
-/* line 66, ../scss/_custom.scss */
+/* line 77, ../scss/_custom.scss */
 .questions_welcome {
   margin-top: 7.1875rem;
   text-align: right;
 }
-/* line 70, ../scss/_custom.scss */
+/* line 81, ../scss/_custom.scss */
 .questions_welcome p {
   padding-left: 5rem;
 }
 
-/* line 75, ../scss/_custom.scss */
+/* line 86, ../scss/_custom.scss */
 .trivia_welcome {
   margin-top: 7.1875rem;
 }
-/* line 78, ../scss/_custom.scss */
+/* line 89, ../scss/_custom.scss */
 .trivia_welcome p {
   padding-right: 5rem;
 }
 
-/* line 84, ../scss/_custom.scss */
+/* line 95, ../scss/_custom.scss */
 .rewards {
   background-color: #F6F6F6;
   margin-top: -9.375rem;
   padding-top: 9.375rem;
 }
-/* line 89, ../scss/_custom.scss */
+/* line 100, ../scss/_custom.scss */
 .rewards .title {
   color: #707885;
   margin-top: 3.125rem;
 }
-/* line 94, ../scss/_custom.scss */
+/* line 105, ../scss/_custom.scss */
 .rewards .gradient-border {
   margin-top: 3.125rem;
 }
 
-/* line 99, ../scss/_custom.scss */
+/* line 110, ../scss/_custom.scss */
 .header_rewards {
   text-align: center;
 }
-/* line 102, ../scss/_custom.scss */
+/* line 113, ../scss/_custom.scss */
 .header_rewards p {
   font-size: 1.125rem;
 }
-/* line 106, ../scss/_custom.scss */
+/* line 117, ../scss/_custom.scss */
 .header_rewards .primary {
   margin-bottom: 1.875rem;
 }
 
-/* line 111, ../scss/_custom.scss */
+/* line 122, ../scss/_custom.scss */
 .item_reward {
   display: table;
 }
-/* line 114, ../scss/_custom.scss */
+/* line 125, ../scss/_custom.scss */
 .item_reward figure {
   display: table-cell;
   margin: 0;
   vertical-align: middle;
   width: 188px;
 }
-/* line 120, ../scss/_custom.scss */
+/* line 131, ../scss/_custom.scss */
 .item_reward figure img {
   display: block;
   height: auto;
   width: 100%;
 }
-/* line 127, ../scss/_custom.scss */
+/* line 138, ../scss/_custom.scss */
 .item_reward p {
   color: #87909E;
   font-size: 1.375rem;
@@ -6228,7 +6240,49 @@ th.hide-for-touch {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 134, ../scss/_custom.scss */
+/* line 145, ../scss/_custom.scss */
 .item_reward p span {
   display: block;
+}
+
+/* line 152, ../scss/_custom.scss */
+.languages {
+  padding: 3.75rem 0;
+  text-align: center;
+}
+/* line 156, ../scss/_custom.scss */
+.languages .primary {
+  font-weight: 300;
+  margin-bottom: 0.3125rem;
+  text-transform: uppercase;
+}
+
+/* line 164, ../scss/_custom.scss */
+.content_languages ul {
+  margin-top: 1.875rem;
+}
+/* line 168, ../scss/_custom.scss */
+.content_languages figure {
+  margin: 0;
+}
+@media only screen and (min-width: 40.0625em) {
+  /* line 168, ../scss/_custom.scss */
+  .content_languages figure {
+    padding: 2.5rem;
+  }
+}
+
+/* line 178, ../scss/_custom.scss */
+.footer_languages .contact {
+  color: #87909E;
+  font-weight: 300;
+}
+/* line 183, ../scss/_custom.scss */
+.footer_languages .contact a {
+  color: #87909E;
+}
+/* line 186, ../scss/_custom.scss */
+.footer_languages .contact a:hover {
+  color: #707885;
+  text-decoration: underline;
 }

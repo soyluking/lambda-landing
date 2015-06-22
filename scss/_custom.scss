@@ -46,6 +46,17 @@
 	height: rem-calc(20);
 }
 
+.sr-only {
+	border: 0;
+	clip: rect(0,0,0,0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
 // Welcome developers section
 .welcome {
 	position: relative;
@@ -133,6 +144,48 @@
 
 		span {
 			display: block;
+		}
+	}
+}
+
+// Languages section
+.languages {
+	padding: $column-gutter*2 0;
+	text-align: center;
+
+	.primary {
+		font-weight: 300;
+		margin-bottom: rem-calc(5);
+		text-transform: uppercase;
+	}
+}
+
+.content_languages {
+	ul {
+		margin-top: $column-gutter;
+	}
+
+	figure {
+		margin: 0;
+		
+		@media #{$medium-up} {
+			padding: rem-calc(40);
+		}
+	}
+}
+
+.footer_languages {
+	.contact {
+		color: $grey-color;
+		font-weight: 300;
+	}
+
+	.contact a {
+		color: $grey-color;
+
+		&:hover {
+			color: $grey-dark-color;
+			text-decoration: underline;
 		}
 	}
 }
