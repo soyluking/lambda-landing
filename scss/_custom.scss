@@ -26,20 +26,28 @@
 	text-align: right;
 }
 
-.btn-white {
-	background-color: $white;
-	border: 1px solid $grey-color;
-	color: $grey-color;
+.button {
+	&.btn-white {
+		background-color: $white;
+		border: 1px solid $grey-color;
+		color: $grey-color;
 
-	&:hover {
-		background-color: $grey-color;
+		&:hover {
+			background-color: $grey-color;
+			color: $white;
+		}
+	}
+
+	&.signup {
 		color: $white;
+		margin-bottom: 0;
+		text-transform: uppercase;
 	}
 }
 
 a.button {
 	background-color: $lime-dark-color;
-	border-top: 3px solid $lime-color;
+	border-top: 2px solid $lime-color;
 
 	&:hover {
 		background-color: scale-color($lime-dark-color, $lightness: -10%);
@@ -52,16 +60,15 @@ a.button {
 
 .gradient-border {
 	background-color: $jungle-dark-color;
-	background: #24394d;
-	background: #24394d;
-	background: -moz-linear-gradient(left,  #24394d 0%, #60b3b1 35%, #a4d683 50%, #60b3b1 75%, #24394d 100%);
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#24394d), color-stop(35%,#60b3b1), color-stop(50%,#a4d683), color-stop(75%,#60b3b1), color-stop(100%,#24394d));
-	background: -webkit-linear-gradient(left,  #24394d 0%,#60b3b1 35%,#a4d683 50%,#60b3b1 75%,#24394d 100%);
-	background: -o-linear-gradient(left,  #24394d 0%,#60b3b1 35%,#a4d683 50%,#60b3b1 75%,#24394d 100%);
-	background: -ms-linear-gradient(left,  #24394d 0%,#60b3b1 35%,#a4d683 50%,#60b3b1 75%,#24394d 100%);
-	background: linear-gradient(to right,  #24394d 0%,#60b3b1 35%,#a4d683 50%,#60b3b1 75%,#24394d 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24394d', endColorstr='#24394d',GradientType=1 );
+	@include radial-gradient(#3a6f75, #273247);
 	height: rem-calc(20);
+
+	&.absolute {
+		margin: 0 0 rem-calc(30);
+		position: absolute;
+		top: 0px;
+		width: 100%;
+	}
 }
 
 .sr-only {
@@ -75,8 +82,22 @@ a.button {
 	width: 1px;
 }
 
+.separator {
+	border-color: $lime-dark-color;
+	border-width: 1px;
+	margin: 0 40%;
+}
+
 .header_section {
 	text-align: center;
+}
+
+.section {
+	padding: $column-gutter*1.5 0;
+
+	@media only screen and (min-width: 40.063em) {
+		padding: $column-gutter*2 0;
+	}
 }
 
 /**
@@ -86,11 +107,7 @@ a.button {
 	padding: rem-calc(30) 0;
 	position: absolute;
 	width: 100%;
-
-	.button {
-		color: $white;
-		text-transform: uppercase;
-	}
+	z-index: 99;
 }
 
 .logo {
@@ -102,14 +119,121 @@ a.button {
  */
 .hero {
 	background-color: $jungle-dark-color;
+	padding-bottom: rem-calc(60);
 	padding-top: rem-calc(120);
+	position: relative;
+
+	@include radial-gradient(#3a6f75, #273247);
+}
+
+.effect_hero {
+	background: transparent left top no-repeat scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+	opacity: 0.2;
+	position: absolute;
+	top: rem-calc(100);
+	width: 100%;
+}
+
+.code_lines {
+	background-image: url(../img/hero-code-lines.png);
+}
+
+.lambdy_hero {
+	margin: 0;
+	vertical-align: middle;
+
+	img {
+		display: block;
+		height: auto;
+		margin: 0 auto;
+		max-width: 100%;
+		width: rem-calc(250);
+	}
+
+	@media only screen and (min-width: 40.063em) {
+		display: table-cell;
+
+		img {
+			margin: 0;
+			width: rem-calc(343);
+		}
+	}
+}
+
+.header_hero {
+	margin-top: -(rem-calc(80));
+	text-align: center;
+	vertical-align: middle;
+
+	@media only screen and (min-width: 40.063em) {
+		display: table-cell;
+		margin-top: 0;
+		padding-left: $column-gutter*2;
+		text-align: left;
+	}
+}
+
+.header_hero {
+	.title {
+		color: $white;
+		font-size: rem-calc(36);
+		font-weight: 400;
+	}
+
+	p {
+		color: $white-dark-color;
+		font-size: rem-calc(16);
+		font-weight: 300;
+		margin-bottom: $column-gutter;
+		position: relative;
+	}
+
+	@media only screen and (min-width: 40.063em) {
+		.title {
+			font-size: rem-calc(64);
+		}
+
+		p {
+			font-size: rem-calc(22);
+			margin-bottom: 0;
+		}
+	}
+}
+
+.more {
+	border: 5px solid;
+	border-radius: 1000px;
+	color: $jungle-dark-color;
+	color: rgba($jungle-dark-color, .5);
+	display: none;
+	height: rem-calc(48);
+	line-height: 1.6;
+	margin-left: $column-gutter*2;
+	margin-top: -(rem-calc(24));
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	width: rem-calc(48);
+
+	&:hover {
+		color: $white-dark-color;
+		color: rgba($white-dark-color, .5);
+	}
+
+	@media only screen and (min-width: 40.063em) {
+		display: inline-block;
+	}
 }
 
 /**
  * Welcome developers section styles
  */
 .welcome {
-	padding: $column-gutter*2 0;
 	position: relative;
 	z-index: 9;
 
@@ -138,8 +262,13 @@ a.button {
 }
 
 .questions_welcome {
+	margin-bottom: rem-calc(20);
 	margin-top: rem-calc(25);
 	text-align: center;
+
+	@media only screen and (min-width: 40.063em) {
+		margin-bottom: 0;
+	}
 
 	@media #{$medium-up} {
 		margin-top: rem-calc(115);
@@ -173,15 +302,11 @@ a.button {
 // Motivational rewards section
 .rewards {
 	background-color: #F6F6F6;
-	padding-top: $column-gutter*2;
+	padding-bottom: 0;
+	position: relative;
 
 	.title {
 		color: $grey-dark-color;
-		margin-top: rem-calc(50);
-	}
-
-	.gradient-border {
-		margin-top: rem-calc(50);
 	}
 
 	@media #{$large-up} {
@@ -191,12 +316,25 @@ a.button {
 }
 
 .header_rewards {
+	margin-bottom: rem-calc(50);
 	p {
 		font-size: $h5-font-size;
 	}
 
 	.primary {
 		margin-bottom: rem-calc(30);
+	}
+
+	li {
+		text-transform: uppercase;
+	}
+
+	.beginner span {
+		border: 1px solid $grey-color;
+	}
+
+	.expert span {
+		color: $white;
 	}
 }
 
@@ -231,7 +369,6 @@ a.button {
 
 // Languages section
 .languages {
-	padding: $column-gutter*2 0;
 	text-align: center;
 
 	.primary {
@@ -276,8 +413,7 @@ a.button {
  */
 .subscribe {
 	background-color: #334C5A;
-	padding: $column-gutter*2 0;
-	@include radial-gradient(#3D7382, #273247);
+	@include radial-gradient(#3a6f75, #273247);
 }
 
 .header_subscribe {
@@ -319,11 +455,10 @@ a.button {
  */
 .footer {
 	background-color: $slate-color;
-	padding: $column-gutter*2 0;
 	@include radial-gradient($slate-color, $slate-dark-color);
 
 	@media #{$medium-up} {
-		padding: $column-gutter*4;
+		padding: $column-gutter*3;
 	}
 }
 
@@ -340,11 +475,19 @@ a.button {
 		background-color: $white;
 		border-radius: 1000px;
 		color: $slate-dark-color;
-		height: rem-calc(60);
-		line-height: rem-calc(60);
+		font-size: 1.5em;
+		height: rem-calc(50);
+		line-height: rem-calc(50);
 		text-align: center;
-		width: rem-calc(60);
+		width: rem-calc(50);
 		@include transition(all, 0.4s, ease-in-out);
+
+		@media #{$medium-up} {
+			font-size: 2em;
+			height: rem-calc(60);
+			line-height: rem-calc(60);
+			width: rem-calc(60);
+		}
 	}
 
 	a:hover {

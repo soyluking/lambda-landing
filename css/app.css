@@ -6126,48 +6126,59 @@ th.hide-for-touch {
   text-align: right;
 }
 
-/* line 29, ../scss/_custom.scss */
-.btn-white {
+/* line 30, ../scss/_custom.scss */
+.button.btn-white {
   background-color: #FFFFFF;
   border: 1px solid #87909E;
   color: #87909E;
 }
-/* line 34, ../scss/_custom.scss */
-.btn-white:hover {
+/* line 35, ../scss/_custom.scss */
+.button.btn-white:hover {
   background-color: #87909E;
   color: #FFFFFF;
 }
+/* line 41, ../scss/_custom.scss */
+.button.signup {
+  color: #FFFFFF;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
 
-/* line 40, ../scss/_custom.scss */
+/* line 48, ../scss/_custom.scss */
 a.button {
   background-color: #A4D683;
-  border-top: 3px solid #BEEAA0;
+  border-top: 2px solid #BEEAA0;
 }
-/* line 44, ../scss/_custom.scss */
+/* line 52, ../scss/_custom.scss */
 a.button:hover {
   background-color: #91cd69;
 }
-/* line 48, ../scss/_custom.scss */
+/* line 56, ../scss/_custom.scss */
 a.button:active {
   border-top: #A4D683;
 }
 
-/* line 53, ../scss/_custom.scss */
+/* line 61, ../scss/_custom.scss */
 .gradient-border {
   background-color: #60B3B1;
-  background: #24394d;
-  background: #24394d;
-  background: -moz-linear-gradient(left, #24394d 0%, #60b3b1 35%, #a4d683 50%, #60b3b1 75%, #24394d 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #24394d), color-stop(35%, #60b3b1), color-stop(50%, #a4d683), color-stop(75%, #60b3b1), color-stop(100%, #24394d));
-  background: -webkit-linear-gradient(left, #24394d 0%, #60b3b1 35%, #a4d683 50%, #60b3b1 75%, #24394d 100%);
-  background: -o-linear-gradient(left, #24394d 0%, #60b3b1 35%, #a4d683 50%, #60b3b1 75%, #24394d 100%);
-  background: -ms-linear-gradient(left, #24394d 0%, #60b3b1 35%, #a4d683 50%, #60b3b1 75%, #24394d 100%);
-  background: linear-gradient(to right, #24394d 0%, #60b3b1 35%, #a4d683 50%, #60b3b1 75%, #24394d 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24394d', endColorstr='#24394d',GradientType=1 );
+  background: -moz-radial-gradient(center, circle cover, #3a6f75 0%, #273247 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #3a6f75), color-stop(100%, #273247));
+  background: -webkit-radial-gradient(center, circle cover, #3a6f75 0%, #273247 100%);
+  background: -o-radial-gradient(center, circle cover, #3a6f75 0%, #273247 100%);
+  background: -ms-radial-gradient(center, circle cover, #3a6f75 0%, #273247 100%);
+  background: radial-gradient(circle cover at center, #3a6f75 0%, #273247 100%);
+  background-color: #3a6f75;
   height: 1.25rem;
 }
+/* line 66, ../scss/_custom.scss */
+.gradient-border.absolute {
+  margin: 0 0 1.875rem;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
 
-/* line 67, ../scss/_custom.scss */
+/* line 74, ../scss/_custom.scss */
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -6179,27 +6190,41 @@ a.button:active {
   width: 1px;
 }
 
-/* line 78, ../scss/_custom.scss */
+/* line 85, ../scss/_custom.scss */
+.separator {
+  border-color: #A4D683;
+  border-width: 1px;
+  margin: 0 40%;
+}
+
+/* line 91, ../scss/_custom.scss */
 .header_section {
   text-align: center;
+}
+
+/* line 95, ../scss/_custom.scss */
+.section {
+  padding: 2.8125rem 0;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 95, ../scss/_custom.scss */
+  .section {
+    padding: 3.75rem 0;
+  }
 }
 
 /**
  * Header styles
  */
-/* line 85, ../scss/_custom.scss */
+/* line 106, ../scss/_custom.scss */
 .header {
   padding: 1.875rem 0;
   position: absolute;
   width: 100%;
-}
-/* line 90, ../scss/_custom.scss */
-.header .button {
-  color: #FFFFFF;
-  text-transform: uppercase;
+  z-index: 99;
 }
 
-/* line 96, ../scss/_custom.scss */
+/* line 113, ../scss/_custom.scss */
 .logo {
   margin: .25rem 0;
 }
@@ -6207,137 +6232,278 @@ a.button:active {
 /**
  * Hero section styles
  */
-/* line 103, ../scss/_custom.scss */
+/* line 120, ../scss/_custom.scss */
 .hero {
   background-color: #60B3B1;
+  padding-bottom: 3.75rem;
   padding-top: 7.5rem;
+  position: relative;
+  background: -moz-radial-gradient(center, circle cover, #3a6f75 0%, #273247 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #3a6f75), color-stop(100%, #273247));
+  background: -webkit-radial-gradient(center, circle cover, #3a6f75 0%, #273247 100%);
+  background: -o-radial-gradient(center, circle cover, #3a6f75 0%, #273247 100%);
+  background: -ms-radial-gradient(center, circle cover, #3a6f75 0%, #273247 100%);
+  background: radial-gradient(circle cover at center, #3a6f75 0%, #273247 100%);
+  background-color: #3a6f75;
+}
+
+/* line 129, ../scss/_custom.scss */
+.effect_hero {
+  background: transparent left top no-repeat scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  opacity: 0.2;
+  position: absolute;
+  top: 6.25rem;
+  width: 100%;
+}
+
+/* line 142, ../scss/_custom.scss */
+.code_lines {
+  background-image: url(../img/hero-code-lines.png);
+}
+
+/* line 146, ../scss/_custom.scss */
+.lambdy_hero {
+  margin: 0;
+  vertical-align: middle;
+}
+/* line 150, ../scss/_custom.scss */
+.lambdy_hero img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 15.625rem;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 146, ../scss/_custom.scss */
+  .lambdy_hero {
+    display: table-cell;
+  }
+  /* line 161, ../scss/_custom.scss */
+  .lambdy_hero img {
+    margin: 0;
+    width: 21.4375rem;
+  }
+}
+
+/* line 168, ../scss/_custom.scss */
+.header_hero {
+  margin-top: -5rem;
+  text-align: center;
+  vertical-align: middle;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 168, ../scss/_custom.scss */
+  .header_hero {
+    display: table-cell;
+    margin-top: 0;
+    padding-left: 3.75rem;
+    text-align: left;
+  }
+}
+
+/* line 182, ../scss/_custom.scss */
+.header_hero .title {
+  color: #FFFFFF;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+/* line 188, ../scss/_custom.scss */
+.header_hero p {
+  color: #F7F4F4;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 1.875rem;
+  position: relative;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 197, ../scss/_custom.scss */
+  .header_hero .title {
+    font-size: 4rem;
+  }
+  /* line 201, ../scss/_custom.scss */
+  .header_hero p {
+    font-size: 1.375rem;
+    margin-bottom: 0;
+  }
+}
+
+/* line 208, ../scss/_custom.scss */
+.more {
+  border: 5px solid;
+  border-radius: 1000px;
+  color: #60B3B1;
+  color: rgba(96, 179, 177, 0.5);
+  display: none;
+  height: 3rem;
+  line-height: 1.6;
+  margin-left: 3.75rem;
+  margin-top: -1.5rem;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 3rem;
+}
+/* line 223, ../scss/_custom.scss */
+.more:hover {
+  color: #F7F4F4;
+  color: rgba(247, 244, 244, 0.5);
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 208, ../scss/_custom.scss */
+  .more {
+    display: inline-block;
+  }
 }
 
 /**
  * Welcome developers section styles
  */
-/* line 111, ../scss/_custom.scss */
+/* line 236, ../scss/_custom.scss */
 .welcome {
-  padding: 3.75rem 0;
   position: relative;
   z-index: 9;
 }
-/* line 116, ../scss/_custom.scss */
+/* line 240, ../scss/_custom.scss */
 .welcome .title {
   font-size: 1.75rem;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 116, ../scss/_custom.scss */
+  /* line 240, ../scss/_custom.scss */
   .welcome .title {
     font-size: 3.625rem;
   }
 }
-/* line 124, ../scss/_custom.scss */
+/* line 248, ../scss/_custom.scss */
 .welcome .description {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 124, ../scss/_custom.scss */
+  /* line 248, ../scss/_custom.scss */
   .welcome .description {
     font-size: 1.375rem;
   }
 }
 
-/* line 134, ../scss/_custom.scss */
+/* line 258, ../scss/_custom.scss */
 .content_welcome .subtitle {
   font-size: 1.75rem;
   margin-bottom: 2.25rem;
 }
 
-/* line 140, ../scss/_custom.scss */
+/* line 264, ../scss/_custom.scss */
 .questions_welcome {
+  margin-bottom: 1.25rem;
   margin-top: 1.5625rem;
   text-align: center;
 }
+@media only screen and (min-width: 40.063em) {
+  /* line 264, ../scss/_custom.scss */
+  .questions_welcome {
+    margin-bottom: 0;
+  }
+}
 @media only screen and (min-width: 40.0625em) {
-  /* line 140, ../scss/_custom.scss */
+  /* line 264, ../scss/_custom.scss */
   .questions_welcome {
     margin-top: 7.1875rem;
     text-align: right;
   }
-  /* line 148, ../scss/_custom.scss */
+  /* line 277, ../scss/_custom.scss */
   .questions_welcome p {
     padding-left: 5rem;
   }
 }
 
-/* line 154, ../scss/_custom.scss */
+/* line 283, ../scss/_custom.scss */
 .trivia_welcome {
   margin-top: 1.5625rem;
   text-align: center;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 154, ../scss/_custom.scss */
+  /* line 283, ../scss/_custom.scss */
   .trivia_welcome {
     margin-top: 7.1875rem;
     text-align: left;
   }
-  /* line 162, ../scss/_custom.scss */
+  /* line 291, ../scss/_custom.scss */
   .trivia_welcome p {
     padding-right: 5rem;
   }
 }
 
-/* line 168, ../scss/_custom.scss */
+/* line 297, ../scss/_custom.scss */
 .screen_welcome figure {
   margin: 0;
   text-align: center;
 }
 
-/* line 174, ../scss/_custom.scss */
+/* line 303, ../scss/_custom.scss */
 .rewards {
   background-color: #F6F6F6;
-  padding-top: 3.75rem;
+  padding-bottom: 0;
+  position: relative;
 }
-/* line 178, ../scss/_custom.scss */
+/* line 308, ../scss/_custom.scss */
 .rewards .title {
   color: #707885;
-  margin-top: 3.125rem;
-}
-/* line 183, ../scss/_custom.scss */
-.rewards .gradient-border {
-  margin-top: 3.125rem;
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 174, ../scss/_custom.scss */
+  /* line 303, ../scss/_custom.scss */
   .rewards {
     margin-top: -15.625rem;
     padding-top: 15.625rem;
   }
 }
 
-/* line 194, ../scss/_custom.scss */
+/* line 318, ../scss/_custom.scss */
+.header_rewards {
+  margin-bottom: 3.125rem;
+}
+/* line 320, ../scss/_custom.scss */
 .header_rewards p {
   font-size: 1.125rem;
 }
-/* line 198, ../scss/_custom.scss */
+/* line 324, ../scss/_custom.scss */
 .header_rewards .primary {
   margin-bottom: 1.875rem;
 }
+/* line 328, ../scss/_custom.scss */
+.header_rewards li {
+  text-transform: uppercase;
+}
+/* line 332, ../scss/_custom.scss */
+.header_rewards .beginner span {
+  border: 1px solid #87909E;
+}
+/* line 336, ../scss/_custom.scss */
+.header_rewards .expert span {
+  color: #FFFFFF;
+}
 
-/* line 203, ../scss/_custom.scss */
+/* line 341, ../scss/_custom.scss */
 .item_reward {
   display: table;
 }
-/* line 206, ../scss/_custom.scss */
+/* line 344, ../scss/_custom.scss */
 .item_reward figure {
   display: table-cell;
   margin: 0;
   vertical-align: middle;
   width: 188px;
 }
-/* line 212, ../scss/_custom.scss */
+/* line 350, ../scss/_custom.scss */
 .item_reward figure img {
   display: block;
   height: auto;
   width: 100%;
 }
-/* line 219, ../scss/_custom.scss */
+/* line 357, ../scss/_custom.scss */
 .item_reward p {
   color: #87909E;
   font-size: 1.375rem;
@@ -6345,48 +6511,47 @@ a.button:active {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 226, ../scss/_custom.scss */
+/* line 364, ../scss/_custom.scss */
 .item_reward p span {
   display: block;
 }
 
-/* line 233, ../scss/_custom.scss */
+/* line 371, ../scss/_custom.scss */
 .languages {
-  padding: 3.75rem 0;
   text-align: center;
 }
-/* line 237, ../scss/_custom.scss */
+/* line 374, ../scss/_custom.scss */
 .languages .primary {
   font-weight: 300;
   margin-bottom: 0.3125rem;
   text-transform: uppercase;
 }
 
-/* line 245, ../scss/_custom.scss */
+/* line 382, ../scss/_custom.scss */
 .content_languages ul {
   margin-top: 1.875rem;
 }
-/* line 249, ../scss/_custom.scss */
+/* line 386, ../scss/_custom.scss */
 .content_languages figure {
   margin: 0;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 249, ../scss/_custom.scss */
+  /* line 386, ../scss/_custom.scss */
   .content_languages figure {
     padding: 2.5rem;
   }
 }
 
-/* line 259, ../scss/_custom.scss */
+/* line 396, ../scss/_custom.scss */
 .footer_languages .contact {
   color: #87909E;
   font-weight: 300;
 }
-/* line 264, ../scss/_custom.scss */
+/* line 401, ../scss/_custom.scss */
 .footer_languages .contact a {
   color: #87909E;
 }
-/* line 267, ../scss/_custom.scss */
+/* line 404, ../scss/_custom.scss */
 .footer_languages .contact a:hover {
   color: #707885;
   text-decoration: underline;
@@ -6395,48 +6560,47 @@ a.button:active {
 /**
  * Waiting list section
  */
-/* line 277, ../scss/_custom.scss */
+/* line 414, ../scss/_custom.scss */
 .subscribe {
   background-color: #334C5A;
-  padding: 3.75rem 0;
-  background: -moz-radial-gradient(center, circle cover, #3D7382 0%, #273247 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #3D7382), color-stop(100%, #273247));
-  background: -webkit-radial-gradient(center, circle cover, #3D7382 0%, #273247 100%);
-  background: -o-radial-gradient(center, circle cover, #3D7382 0%, #273247 100%);
-  background: -ms-radial-gradient(center, circle cover, #3D7382 0%, #273247 100%);
-  background: radial-gradient(circle cover at center, #3d7382 0%, #273247 100%);
-  background-color: #3D7382;
+  background: -moz-radial-gradient(center, circle cover, #3a6f75 0%, #273247 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #3a6f75), color-stop(100%, #273247));
+  background: -webkit-radial-gradient(center, circle cover, #3a6f75 0%, #273247 100%);
+  background: -o-radial-gradient(center, circle cover, #3a6f75 0%, #273247 100%);
+  background: -ms-radial-gradient(center, circle cover, #3a6f75 0%, #273247 100%);
+  background: radial-gradient(circle cover at center, #3a6f75 0%, #273247 100%);
+  background-color: #3a6f75;
 }
 
-/* line 284, ../scss/_custom.scss */
+/* line 420, ../scss/_custom.scss */
 .header_subscribe .title {
   color: #FFFFFF;
   font-size: 2.5rem;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 284, ../scss/_custom.scss */
+  /* line 420, ../scss/_custom.scss */
   .header_subscribe .title {
     font-size: 4rem;
   }
 }
 
-/* line 294, ../scss/_custom.scss */
+/* line 430, ../scss/_custom.scss */
 .content_subscribe {
   text-align: center;
 }
-/* line 297, ../scss/_custom.scss */
+/* line 433, ../scss/_custom.scss */
 .content_subscribe p {
   font-size: 1.1875rem;
   color: #87909E;
 }
-/* line 302, ../scss/_custom.scss */
+/* line 438, ../scss/_custom.scss */
 .content_subscribe input {
   font-size: 1.125rem;
   font-weight: 300;
   height: 4.6875rem;
   text-align: center;
 }
-/* line 309, ../scss/_custom.scss */
+/* line 445, ../scss/_custom.scss */
 .content_subscribe a.button {
   display: block;
   color: #40464F;
@@ -6447,10 +6611,9 @@ a.button:active {
 /**
  * Footer styles
  */
-/* line 320, ../scss/_custom.scss */
+/* line 456, ../scss/_custom.scss */
 .footer {
   background-color: #40464F;
-  padding: 3.75rem 0;
   background: -moz-radial-gradient(center, circle cover, #40464F 0%, #2C2D3A 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #40464F), color-stop(100%, #2C2D3A));
   background: -webkit-radial-gradient(center, circle cover, #40464F 0%, #2C2D3A 100%);
@@ -6460,59 +6623,69 @@ a.button:active {
   background-color: #40464F;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 320, ../scss/_custom.scss */
+  /* line 456, ../scss/_custom.scss */
   .footer {
-    padding: 7.5rem;
+    padding: 5.625rem;
   }
 }
 
-/* line 330, ../scss/_custom.scss */
+/* line 465, ../scss/_custom.scss */
 .social_footer {
   margin: 0;
   text-align: center;
 }
-/* line 334, ../scss/_custom.scss */
+/* line 469, ../scss/_custom.scss */
 .social_footer > li {
   display: inline-block;
   margin: 0 0.625rem;
 }
-/* line 339, ../scss/_custom.scss */
+/* line 474, ../scss/_custom.scss */
 .social_footer .fa {
   background-color: #FFFFFF;
   border-radius: 1000px;
   color: #2C2D3A;
-  height: 3.75rem;
-  line-height: 3.75rem;
+  font-size: 1.5em;
+  height: 3.125rem;
+  line-height: 3.125rem;
   text-align: center;
-  width: 3.75rem;
+  width: 3.125rem;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 351, ../scss/_custom.scss */
+@media only screen and (min-width: 40.0625em) {
+  /* line 474, ../scss/_custom.scss */
+  .social_footer .fa {
+    font-size: 2em;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    width: 3.75rem;
+  }
+}
+/* line 494, ../scss/_custom.scss */
 .social_footer a:hover .fa {
   background-color: #87909E;
   color: #FFFFFF;
 }
-/* line 358, ../scss/_custom.scss */
+/* line 501, ../scss/_custom.scss */
 .social_footer a:active .fa {
   background-color: #707885;
   color: #FFFFFF;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 330, ../scss/_custom.scss */
+  /* line 465, ../scss/_custom.scss */
   .social_footer {
     text-align: left;
   }
-  /* line 367, ../scss/_custom.scss */
+  /* line 510, ../scss/_custom.scss */
   .social_footer > li:first-child {
     margin-left: 0;
   }
 }
 
-/* line 373, ../scss/_custom.scss */
+/* line 516, ../scss/_custom.scss */
 .credit_footer {
   color: #FFFFFF;
   font-size: 0.8125rem;
@@ -6521,7 +6694,7 @@ a.button:active {
   text-align: center;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 373, ../scss/_custom.scss */
+  /* line 516, ../scss/_custom.scss */
   .credit_footer {
     padding-bottom: 1.25rem;
     text-align: right;

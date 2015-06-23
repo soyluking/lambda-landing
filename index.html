@@ -15,7 +15,7 @@
 <body>
   <header class="header">
     <div class="row">
-      <div class="large-8 columns">
+      <div class="medium-8 columns">
         <a href="#" title="">
           <figure class="logo">
             <img src="img/lambda-logo.png" alt="Lambda logo">
@@ -23,25 +23,39 @@
         </a>
       </div>
 
-      <div class="text-right large-8 columns">
-        <a href="#subscribe" title="" class="button radius">
+      <div class="text-right medium-8 show-for-medium-up columns">
+        <a href="#subscribe" title="" class="button signup bg radius">
           Sign Up
         </a>
       </div>
     </div>
   </header><!-- /.header -->
 
-  <section class="hero">
+  <article class="hero">
+    <div class="code_lines effect_hero"></div>
     <div class="row">
-      <div class="columns">
-        <h1>Play Lambda</h1>
-        <p>Advance your coding skills the fun way.</p>
-        <a href="#" title="">Ver más</a>
+      <div class="medium-12 medium-centered columns">
+        <figure class="lambdy_hero">
+          <img src="img/lambdy-hero.png" alt="">
+        </figure>
+
+        <div class="header_hero">
+          <h1 class="title">Play Lambda</h1>
+          <p>
+            Advance your coding <br>skills the fun way.
+            <a class="more round" href="#welcome" title="">
+              <span class="fa fa-chevron-down"></span>
+            </a>
+          </p>
+          <a href="#subscribe" title="" class="button radius signup show-for-small-only">
+            Sign Up
+          </a>
+        </div>
       </div>
     </div>
-  </section><!-- /.hero -->
+  </article><!-- /.hero -->
 
-  <article class="welcome">
+  <article id="welcome" class="welcome section">
     <header class="header_welcome header_section row">
       <div class="small-13 large-12 small-centered columns">
         <h2 class="title primary">Developers, welcome to your new addiction.</h2>
@@ -61,6 +75,7 @@
         <p>Submit your own and curate question submissions.</p>
         <a class="button btn-white radius" href="#" title="">Visit the Question Bank</a>
       </article>
+      <hr class="separator show-for-small-only">
       <article class="trivia_welcome  medium-8 large-5 columns">
         <h4 class="subtitle">Fast-paced Trivia Challenges</h4>
         <p>Compete in rounds of timed questions against fellow coders.</p>
@@ -69,12 +84,14 @@
     </section>
   </article><!-- /.welcome -->
 
-  <article class="rewards">
+  <article class="rewards section">
+    <div class="gradient-border absolute"></div>
+
     <header class="header_rewards header_section show-for-medium-up row">
       <div class="large-8 large-centered columns">
         <ul class="button-group radius even-2">
-          <li><span class="button btn-white">Beginner</span></li>
-          <li><span class="button">Expert</span></li>
+          <li class="beginner"><span class="button btn-white">Beginner</span></li>
+          <li class="expert"><span class="button">Expert</span></li>
         </ul>
         <p>
           Two levels of questions. <br>
@@ -122,7 +139,7 @@
     <div class="gradient-border"></div>
   </article><!-- /.rewards -->
 
-  <article class="languages">
+  <article class="languages section">
     <header class="header_languages header_section row">
       <div class="columns">
         <p class="primary">Our first three languages</p>
@@ -157,7 +174,7 @@
     </footer>
   </article><!-- /.languages -->
 
-  <article id="subscribe" class="subscribe">
+  <article id="subscribe" class="subscribe section">
     <header class="header_subscribe header_section row">
       <div class="columns">
         <h3 class="title">Join the Waiting List</h3>
@@ -175,18 +192,18 @@
     </section>
   </article><!-- /.subscribe -->
 
-  <footer class="footer">
+  <footer class="footer section">
     <div class="row">
       <div class="medium-7 columns">
         <ul class="social_footer">
           <li>
             <a href="http://facebook.com/playlambda/" target="_blank" title="Follow us on Facebook">
-              <span class="fa fa-2x fa-facebook"></span>
+              <span class="fa fa-facebook"></span>
             </a>
           </li>
           <li>
             <a href="http://twitter.com/playlambda/" target="_blank" title="Follow us on Twitter">
-              <span class="fa fa-2x fa-twitter"></span>
+              <span class="fa fa-twitter"></span>
             </a>
           </li>
         </ul>
